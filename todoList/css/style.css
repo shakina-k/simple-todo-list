@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after{
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear{
+	clear: both;
+}
+
+html{
+    font-size: 62.50%;
+}
+body{
+    font-size: 1.6rem;
+    color: rgb(176, 176, 15);
+    background-image: url("../images/fall-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80rem;
+    text-align: center;
+}
+.container{
+    margin-top: 7rem;
+}
+h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.container p{
+    font-size: 2rem;
+    font-weight: 700;
+}
+#task{
+    background:rgb(120, 102, 102, 0.8);
+    color:  rgb(173, 173, 11) ;
+    font-size: 1.8rem;
+    width: 40%;
+    margin-bottom:10rem;
+    border-radius: 2rem;
+    cursor: pointer;
+
+}
+#add{
+     background:rgb(120, 102, 102, 0.8);
+     width: 10%;
+     height: auto;
+     color: rgb(173, 173, 11) ;
+     border-radius: 2rem;
+    cursor: pointer;
+}
+
+#taskList{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    gap: 0.5rem;
+
+}
+
+li{
+   background:rgb(120, 102, 102, 0.8);
+    color:  rgb(173, 173, 11) ;
+    font-size: 1.6rem; 
+    width: 30rem;
+    max-width: 70rem;
+    text-align: start;
+    border-radius: 2rem;
+    list-style: none;
+    margin-right: 5rem;
+    cursor: pointer;
+
+}
+li.completed{
+    text-decoration: line-through;
+    color: rgb(173, 173, 11) ;
+}
+input::placeholder{
+ color: rgb(173, 173, 11) ;
+}
+ li span:last-child{
+    margin-left: 5rem;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+@media screen and (max-width: 500px){
+    #task{
+        width: 50%;
+    }
+    #add{
+        width: 15%;
+    }
+    
+}
